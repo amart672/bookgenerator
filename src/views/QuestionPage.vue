@@ -9,7 +9,7 @@ import { ref } from 'vue'
       <input v-model="booksetting" type="text" placeholder="Book Setting" />
       <input v-model="bookgenre" type="text" placeholder="Book Genre" />
       <input v-model="bookrate" type="number" placeholder="Book Rate" />
-      <input v-model="bookrate" type="" placeholder="Book Rate" />
+      <input v-model="bookprice" type="money" placeholder="Book Price" />
 
       <button type="submit" class="bg-gray-500 px-4 py-2">Submit</button>
     </form>

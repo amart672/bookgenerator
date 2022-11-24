@@ -21,11 +21,13 @@ const logUserIn = async () => {
 </script>
 
 <template>
-  <form class="login-form" @submit.prevent="logUserIn">
-    <input v-model="username" type="text" placeholder="Username" />
-    <input v-model="password" type="password" placeholder="Password" />
-    <button type="submit" class="bg-blue-700 px-4 py-2">Log In</button>
-  </form>
+  <div>
+    <form class="login-form" @submit.prevent="logUserIn">
+      <input v-model="username" type="text" placeholder="Username" />
+      <input v-model="password" type="password" placeholder="Password" />
+      <button type="submit" class="bg-blue-700 px-4 py-2">Log In</button>
+    </form>
+  </div>
 </template>
 
 <style scoped lang="postcss">
