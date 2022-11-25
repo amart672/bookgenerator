@@ -6,11 +6,7 @@ import { ref } from 'vue'
 <template>
   <main class="flex min-h-screen items-center justify-center bg-zinc-600">
     <div>
-      <img class="bookcover" /><img
-        :src="'/public/pictures/touchofdarkness'"
-        alt="Touch of Darkness"
-        srcset="'/public/pictures/touchofdarkness'"
-      />
+      <img class="bookcover" /><img :src="'/public/pictures/touchofdarkness'" alt="Touch of Darkness" srcset="" />
       <img class="bookcover" /><img
         :src="'/public/pictures/faultinourstars'"
         alt="Fault in our Stars"

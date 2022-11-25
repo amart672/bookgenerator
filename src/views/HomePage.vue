@@ -1,10 +1,13 @@
 <script setup>
 import { ref } from 'vue'
-const title = ref('Click on Questions')
+const title = ref('Book Generator!')
 </script>
 
 <template>
-  <main class="flex min-h-screen items-center justify-center bg-zinc-600">
-    <h1 class="text-6xl font-bold text-purple-400">{{ title }}</h1>
+  <main class="flex min-h-screen items-center justify-center bg-indigo-300">
+    <h1 class="text-8xl font-bold text-purple-400">
+      {{ title }}
+      <p class="text-center font-serif text-4xl text-lime-400">Click on Questions to Start</p>
+    </h1>
   </main>
 </template>
