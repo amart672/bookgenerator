@@ -4,26 +4,21 @@ import { ref } from 'vue'
 </script>
 
 <template>
-  <main class="flex min-h-screen items-center justify-center bg-zinc-600">
-    <div>
-      <img class="bookcover" /><img :src="'/public/pictures/touchofdarkness'" alt="Touch of Darkness" srcset="" />
-      <img class="bookcover" /><img
-        :src="'/public/pictures/faultinourstars'"
-        alt="Fault in our Stars"
-        srcset="'/public/pictures/faultinourstars'"
-      />
-      <img class="bookcover" /><img
-        :src="'/public/pictures/twilight'"
-        alt="Twilight"
-        srcset="'/public/pictures/twilight'"
-      />
-    </div>
-  </main>
+  <div>
+    <img class="bookcover" /><img :src="'/pictures/touchofdarkness.jpg'" alt="Touch of Darkness" srcset="" />
+    <img class="bookcover" /><img :src="'/pictures/faultinourstars.jpg'" alt="Fault in our Stars" srcset="" />
+    <img class="bookcover" /><img :src="'/pictures/twilight.jpg'" alt="Twilight" srcset="" />
+    <img class="bookcover" /><img :src="'/pictures/lovehypothesis.jpg'" alt="Love Hypothesis" srcset="" />
+    <img class="bookcover" /><img :src="'/pictures/hauntedhotels.jpg'" alt="Haunted Hotels" srcset="" />
+    <img class="bookcover" /><img :src="'/pictures/uglylove.jpg'" alt="Ugly Love" srcset="" />
+    <img class="bookcover" /><img :src="'/pictures/youwillpay.jpg'" alt="You Will Pay" srcset="" />
+    <img class="bookcover" /><img :src="'/pictures/stealingmonalisa.jpg'" alt="Stealing Mona Lisa" srcset="" />
+  </div>
 </template>
 
 <style scoped lang="postcss">
 .div {
-  @apply cursor-pointer overflow-hidden rounded-md bg-slate-100 p-8 shadow-md transition-transform duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-slate-900;
+  @apply cursor-pointer overflow-hidden rounded-md bg-slate-800;
   &-class {
     @apply mx-auto rounded-full object-contain;
   }
