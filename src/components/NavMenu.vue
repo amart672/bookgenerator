@@ -7,19 +7,16 @@ const { isAuthenticated, logout, user } = useAuth()
 
 <template>
   <nav>
-    <img class="logo" src="/pictures/logo.png" alt="Logo" srcset="" />
-    <div class="wrapper">
-      <RouterLink to="/" class="brand">📚</RouterLink>
-    </div>
     <div class="menu">
       <p v-show="isAuthenticated" class="px-2 py-4">
         Welcome back
-        <strong>
-          <i>{{ user?.username }}</i>
-        </strong>
+        <strong
+          ><i>{{ user.name }}</i></strong
+        >
       </p>
       <div v-if="isAuthenticated">
-        <RouterLink :to="{ name: 'Questions' }" href="#" class="menu-item">Questions</RouterLink>
+        <RouterLink :to="{ name: 'Home' }" href="#" class="menu-item">📚</RouterLink>
+        <RouterLink :to="{ name: 'Question' }" href="#" class="menu-item">Questions</RouterLink>
         <button class="menu-logout" @click="logout">Logout</button>
       </div>
       <div v-else>
@@ -29,14 +26,17 @@ const { isAuthenticated, logout, user } = useAuth()
   </nav>
 </template>
 
-<style lang="postcss" scoped>
+<style scoped lang="postcss">
 nav {
-  @apply flex justify-center space-x-8 bg-zinc-600 text-2xl text-sky-400;
-  .logo {
-    @apply h-14 w-14;
+  @apply flex h-20 bg-slate-900 text-slate-200;
+}
+.menu {
+  @apply flex gap-4;
+  & div {
+    @apply py-4;
   }
-  & .router-link-active {
-    @apply underline underline-offset-4;
+  &-item {
+    @apply rounded-md px-4 py-2 hover:bg-yellow-500 hover:text-slate-900;
   }
 }
 </style>
