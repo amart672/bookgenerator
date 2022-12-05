@@ -7,7 +7,6 @@ const routes = [
   { path: '/question', name: 'Question', component: () => import('@/views/QuestionPage.vue') },
   { path: '/bookgenerator', name: 'Book Generator', component: () => import('@/views/BookGenerator.vue') },
   { path: '/login', name: 'Login', component: () => import('@/views/LoginPage.vue') },
-  { path: '/bookgenerator', name: 'Book Generator', component: () => import('@/views/BookGenerator.vue') },
 ]
 
 const router = createRouter({

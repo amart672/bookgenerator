@@ -62,9 +62,9 @@ import { ref } from 'vue'
 
 <style scoped lang="postcss">
 .main {
-  @apply flex min-h-screen items-center justify-center bg-zinc-600;
+  @apply flex min-h-screen items-center justify-center bg-blue-400;
   &-bookcover {
-    @apply flex columns-3;
+    @apply list-item;
   }
 }
 </style>

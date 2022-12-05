@@ -8,8 +8,8 @@ import { ref } from 'vue'
     <form class="questions-form" @submit.prevent="questionsform">
       <input v-model="booksetting" type="text" placeholder="Book Setting" />
       <input v-model="bookgenre" type="text" placeholder="Book Genre" />
-      <input v-model="bookprice" type="number" min="10.00" max="20.00" maplaceholder="Book Price" />
-      <input v-model="bookprice" type="range" min="1" max="10" placeholder="Book Rate" />
+      <input v-model="bookprice" type="number" min="10.00" max="20.00" placeholder="Book Price" />
+      <input v-model="bookrate" type="range" min="1" max="10" placeholder="Book Rate" />
       <RouterLink to="/bookgenerator" button type="submit" class="bg-gray-500 px-4 py-2 text-center">Submit</RouterLink>
     </form>
   </div>

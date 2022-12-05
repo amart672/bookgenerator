@@ -1,10 +1,27 @@
 <script setup>
-// eslint-disable-next-line no-unused-vars
 import { ref } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
+import { useAuth } from '@/composables/useAuth'
+const { login, logout } = useAuth()
+const router = useRouter()
+const route = useRoute()
+const username = ref('')
+const password = ref('')
+const logUserIn = async () => {
+  if (await login(username.value, password.value)) {
+    if (route.query.redirect) {
+      router.push(route.query.redirect)
+    } else {
+      router.push({ name: 'Home' })
+    }
+  } else {
+    logout()
+  }
+}
 </script>
 
 <template>
-  <div>
+  <div class="flex min-h-screen items-center justify-center bg-green-200">
     <form class="login-form" @submit.prevent="logUserIn">
       <input v-model="username" type="text" placeholder="Username" />
       <input v-model="password" type="password" placeholder="Password" />
