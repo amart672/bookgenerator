@@ -2,18 +2,13 @@
 // eslint-disable-next-line no-unused-vars
 import { ref } from 'vue'
 import { useAuth } from '@/composables/useAuth'
-const { isAuthenticated, logout, user } = useAuth()
+const { isAuthenticated, logout } = useAuth()
 </script>
 
 <template>
   <nav>
     <div class="menu">
-      <p v-show="isAuthenticated" class="px-2 py-4">
-        Welcome back
-        <strong
-          ><i>{{ user.name }}</i></strong
-        >
-      </p>
+      <p v-show="isAuthenticated" class="px-2 py-4">Welcome back</p>
       <div v-if="isAuthenticated">
         <RouterLink :to="{ name: 'Home' }" href="#" class="menu-item">📚</RouterLink>
         <RouterLink :to="{ name: 'Question' }" href="#" class="menu-item">Questions</RouterLink>
