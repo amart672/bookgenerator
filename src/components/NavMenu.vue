@@ -23,7 +23,7 @@ const { isAuthenticated, logout } = useAuth()
 
 <style scoped lang="postcss">
 nav {
-  @apply flex h-20 bg-slate-900 text-slate-200;
+  @apply flex h-20 bg-yellow-300 text-slate-800;
 }
 .menu {
   @apply flex gap-4;
@@ -31,7 +31,10 @@ nav {
     @apply py-4;
   }
   &-item {
-    @apply rounded-md px-4 py-2 hover:bg-yellow-500 hover:text-slate-900;
+    @apply rounded-md px-4 py-2 hover:bg-lime-500 hover:text-slate-900;
+  }
+  &-logout {
+    @apply rounded-md px-4 py-2 hover:bg-fuchsia-400 hover:text-slate-900;
   }
 }
 </style>

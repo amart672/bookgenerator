@@ -32,7 +32,7 @@ const logUserIn = async () => {
 
 <style scoped lang="postcss">
 .login-form {
-  @apply mx-auto mt-60 flex max-w-md flex-col gap-4 rounded-md bg-white p-8 text-center shadow-lg;
+  @apply mx-auto flex max-w-md flex-col gap-4 rounded-md bg-white p-8 text-center shadow-lg;
   & input {
     @apply rounded-md px-4 py-2 text-xl ring-1 ring-slate-300;
   }
