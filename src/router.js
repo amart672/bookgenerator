@@ -16,6 +16,9 @@ const routes = [
   { path: '/bookgenerator', name: 'Book Generator', component: () => import('@/views/BookGenerator.vue') },
   { path: '/login', name: 'Login', component: () => import('@/views/LoginPage.vue') },
   { path: '/notfound', name: 'NotFound', component: () => import('@/views/NotFound.vue') },
+  { path: '/facebook', name: 'FaceBook', component: () => import('@/views/FaceBook.vue') },
+  { path: '/email', name: 'EmailPage', component: () => import('@/views/EmailPage.vue') },
+  { path: '/twitter', name: 'TwiterPage', component: () => import('@/views/TwiterPage.vue') },
 ]
 
 const router = createRouter({
