@@ -18,7 +18,7 @@ const routes = [
   { path: '/notfound', name: 'NotFound', component: () => import('@/views/NotFound.vue') },
   { path: '/facebook', name: 'FaceBook', component: () => import('@/views/FaceBook.vue') },
   { path: '/email', name: 'EmailPage', component: () => import('@/views/EmailPage.vue') },
-  { path: '/twitter', name: 'TwiterPage', component: () => import('@/views/TwiterPage.vue') },
+  { path: '/twitter', name: 'TwitterPage', component: () => import('@/views/TwitterPage.vue') },
 ]
 
 const router = createRouter({
